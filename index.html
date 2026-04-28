@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayan-iki</title>
+
+    <link href="https://fonts.cdnfonts.com/css/another-typewriter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="banner_header">
+        <div class="search_header">
+            <div class="search_bar">
+                <form>
+                    <input type="search" class="search_input" placeholder="Search...">
+                    <button type="submit" class="search_submit">
+                        <img src="search_img.png" alt="Search Icon">
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="logo_header">
+            <h1 class="website_name">BAYAN-IKI</h1>
+            <img src="baybayin_img.png" class="baybayin_logo" alt="Baybayin Logo">
+            <img src="phflag_img.png" class="phflag_logo" alt="Philippine Flag Logo">
+        </div>
+
+        <div class="tabs_header">
+            <nav class="tabs">
+                <a href="index.html" class="tab_link active">Home</a>
+                <a href="#gallery" class="tab_link">Gallery</a>
+                <a href="Quiz.html" class="tab_link">Quiz</a>
+                <a href="About_us.html" class="tab_link">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <h1 class="main_title">Bayani ng Bayan: Honor the Past, Inspire the Future</h1>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="slide_img1.jpg" class="slide active" alt="Slide Image 1">
+            <img src="slide_img2.png" class="slide" alt="Slide Image 2">
+            <img src="slide_img3.jpg" class="slide" alt="Slide Image 3">
+            <img src="slide_img4.jpg" class="slide" alt="Slide Image 4">
+            <img src="slide_img5.jpg" class="slide" alt="Slide Image 5">
+        </div>
+
+        <div class="dots">
+            <span class="dot active" onclick="showSlide(0)"></span>
+            <span class="dot" onclick="showSlide(1)"></span>
+            <span class="dot" onclick="showSlide(2)"></span>
+            <span class="dot" onclick="showSlide(3)"></span>
+            <span class="dot" onclick="showSlide(4)"></span>
+        </div>
+    </div>
+
+    <section>
+        <article>
+            <blockquote class="intro_parag">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The rich history of the Philippines is shaped by individuals whose actions influenced the nation's development.
+                This website presents Philippine heroes from different historical periods, highlighting their roles, contributions, and historical context.
+                By providing organized and accessible information, the site aims to help visitors better understand the people who played important roles in shaping Philippine society and national identity.
+            </blockquote>
+
+            <blockquote class="intro_parag">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Below this page is a gallery featuring heroes in Philippine history.
+                It is sorted according to the timeline when their contributions made their impact.
+                Note that the information on the content is based on various sources, in which they may have different accounts of what transpired.
+                Furthermore, the gallery itself does not claim to be complete, as the heroes present were mostly known in various periods of Philippine history.
+            </blockquote>
+        </article>
+    </section>
+
+    <div class="outer_border" id="gallery">
+
+        <div class="bayani_title">
+            <p>Mga Bayani ng Pilipinas</p>
+        </div>
+
+        <div class="small_border"></div>
+
+        <div class="timelines">
+            <p>PRE-COLONIAL ERA</p>
+        </div>
+
+        <div class="pre_colonial">
+
+            <div class="pre_con_hero">
+                <a href="Lapu-lapu.html">
+                    <img src="https://raw.githubusercontent.com/EironnAlberich/lapu_lapu/main/lapu_lapu.png" alt="Lapu-Lapu">
+                </a>
+                <div class="description">
+                    <p>Lapu-Lapu</p>
+                    <p>1491 - 1592</p>
+                </div>
+            </div>
+
+            <div class="pre_con_hero">
+                <a href="Sulayman.html"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLFAnnIoVCWNqNoioyY3v7t-F6mWC_WboY0w&s" alt="Rajah Sulayman">
+                </a>
+                <div class="description">
+                    <p>Rajah Sulayman</p>
+                    <p>1558 - 1575</p>
+                </div>
+            </div>
+
+            <div class="pre_con_hero">
+                <a href="Lakandula.html"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYV3703cC5GWn1HvDl4nn5xuJs9aHTnGumsg&s" alt="Lakandula">
+                </a>
+                <div class="description">
+                    <p>Lakandula</p>
+                    <p>1503 - 1575</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="timelines">
+            <p>SPANISH COLONIZATION</p>
+        </div>
+
+        <div class="slider_container">
+            <button class="arrow left" id="spanishLeft" onclick="scrollSpanish(-1)">❮</button>
+
+            <div class="spanish_colonization" id="spanishSlider">
+
+                <div class="spanish_hero">
+                    <a href="Silang.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHRJ2Y3y4UJwmn9O1YUKALDR2o4xVm_-xk_A&s" alt="Gabriela Silang">
+                    </a>
+                    <div class="description">
+                        <p>Gabriela Silang</p>
+                        <p>1731 - 1763</p>
+                    </div>
+                </div>
+
+                <div class="spanish_hero">
+                    <a href="Rizal.html">
+                        <img src="https://www.artnet.com/WebServices/images/ll00033lldeX9GFgFEjR3CfDrCWvaHBOcN1GE/teodoro-buenaventura-portrait-of-jose-rizal.jpg" alt="Jose Rizal">
+                    </a>
+                    <div class="description">
+                        <p>Jose P. Rizal</p>
+                        <p>1861 - 1896</p>
+                    </div>
+                </div>
+
+                <div class="spanish_hero">
+                    <a href="Bonifacio.html">
+                        <img src="https://cdn.tatlerasia.com/tatlerasia/i/2021/11/23090904-19516779561-d1314d7545-o_cover_1584x1800.jpg" alt="Andres Bonifacio">
+                    </a>
+                    <div class="description">
+                        <p>Andres Bonifacio</p>
+                        <p>1863 - 1897</p>
+                    </div>
+                </div>
+
+                <div class="spanish_hero">
+                    <a href="Luna.html">
+                        <img src="https://cdn.kahimyang.com/resources-18/general_antonio_luna.webp" alt="Antonio Luna">
+                    </a>
+                    <div class="description">
+                        <p>Antonio Luna</p>
+                        <p>1866 - 1899</p>
+                    </div>
+                </div>
+
+                <div class="spanish_hero">
+                    <a href="Mabini.html">
+                        <img src="https://www.feu.edu.ph/wp-content/uploads/2023/05/mabini-2.jpg" alt="Apolinario Mabini">
+                    </a>
+                    <div class="description">
+                        <p>Apolinario Mabini</p>
+                        <p>1864 - 1903</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <button class="arrow right" id="spanishRight" onclick="scrollSpanish(1)">❯</button>
+        </div>
+
+        <div class="timelines">
+            <p>AMERICAN COLONIZATION</p>
+        </div>
+
+        <div class="slider_container">
+            <button class="arrow left" id="americanLeft" onclick="scrollAmerican(-1)">❮</button>
+
+            <div class="american_colonization" id="americanSlider">
+
+                <div class="american_hero">
+                    <a href="Malvar.html">
+                        <img src="https://www.bayaniart.com/wp-content/uploads/2024/12/Heneral-MIGUEL-MALVAR-01.jpg" alt="Miguel Malvar">
+                    </a>
+                    <div class="description">
+                        <p>Miguel Malvar</p>
+                        <p>1865 - 1911</p>
+                    </div>
+                </div>
+
+                <div class="american_hero">
+                    <a href="Delpilar.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8T14zCqjEM6zCTQOu9ftiDNY68RiburmHw&s" alt="Gregorio del Pilar">
+                    </a>
+                    <div class="description">
+                        <p>Gregorio Del Pilar</p>
+                        <p>1875 - 1899</p>
+                    </div>
+                </div>
+
+                <div class="american_hero">
+                    <a href="Sumulong.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Senator_Juan_Sumulong_%281935%29.png/250px-Senator_Juan_Sumulong_%281935%29.png" alt="Juan Sumulong">
+                    </a>
+                    <div class="description">
+                        <p>Juan Sumulong</p>
+                        <p>1875 - 1942</p>
+                    </div>
+                </div>
+
+                <div class="american_hero">
+                    <a href="Aquino.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa2NS3sCeeN9I-TAijSDusfUEqrZluvH9pRA&s" alt="Melchora Aquino">
+                    </a>
+                    <div class="description">
+                        <p>Melchora Aquino</p>
+                        <p>1812 - 1919</p>
+                    </div>
+                </div>
+
+                <div class="american_hero">
+                    <a href="Sakay.html">
+                        <img src="https://www.bayaniart.com/wp-content/uploads/2022/12/Heneral_Macario_Sakay.jpg" alt="Macario Sakay">
+                    </a>
+                    <div class="description">
+                        <p>Macario Sakay</p>
+                        <p>1870 - 1907</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="arrow right" id="americanRight" onclick="scrollAmerican(1)">❯</button>
+        </div>
+
+        <div class="timelines">
+            <p>JAPANESE COLONIZATION</p>
+        </div>
+
+        <div class="slider_container">
+            <button class="arrow left" id="japaneseLeft" onclick="scrollJapanese(-1)">❮</button>
+
+            <div class="japanese_colonization" id="japaneseSlider">
+
+                <div class="japanese_hero">
+                    <a href="Santos.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmJtcHSjIcaTg9Oo6V6hqgYfVm0Z09BU5Dg&s" alt="Jose Abad Santos">
+                    </a>
+                    <div class="description">
+                        <p>Jose Abad Santos</p>
+                        <p>1886 - 1942</p>
+                    </div>
+                </div>
+
+                <div class="japanese_hero">
+                    <a href="Lim.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/2nd_Lt._Roberto_Lim_on_March_1%2C_1942_%28cropped%29.jpg/330px-2nd_Lt._Roberto_Lim_on_March_1%2C_1942_%28cropped%29.jpg" alt="Vicente Lim">
+                    </a>
+                    <div class="description">
+                        <p>Vicente Lim</p>
+                        <p>1888 - 1944</p>
+                    </div>
+                </div>
+
+                <div class="japanese_hero">
+                    <a href="Fernandez.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKoVABV3QMhKKyEWE4kt1uJdO4ZXpgk0-Y3A&s" alt="Nieves Fernandez">
+                    </a>
+                    <div class="description">
+                        <p>Nieves Fernandez</p>
+                        <p>1906 - 1997</p>
+                    </div>
+                </div>
+
+                <div class="japanese_hero">
+                    <a href="Paraiso.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy17r6yq14qkk6gIOimI6hz8YTw-DNqx3ncA&s" alt="Remedios Gomez-Paraiso">
+                    </a>
+                    <div class="description">
+                        <p>Remedios Gomez-Paraiso</p>
+                        <p>1918 - 2014</p>
+                    </div>
+                </div>
+
+                <div class="japanese_hero">
+                    <a href="Leones.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPFHHvs40kQyv9XB1WRV-Mm1uwJLyppVJbZw&s" alt="Magdalena Leones">
+                    </a>
+                    <div class="description">
+                        <p>Magdalena Leones</p>
+                        <p>1920 - 2016</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="arrow right" id="japaneseRight" onclick="scrollJapanese(1)">❯</button>
+        </div>
+
+    </div>
+
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            let slides = document.querySelectorAll(".slide");
+            let dots = document.querySelectorAll(".dot");
+
+            slides.forEach(slide => slide.classList.remove("active"));
+            dots.forEach(dot => dot.classList.remove("active"));
+
+            slides[n].classList.add("active");
+            dots[n].classList.add("active");
+
+            currentSlide = n;
+        }
+
+        function autoSlide() {
+            let slides = document.querySelectorAll(".slide");
+
+            currentSlide++;
+
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+
+            showSlide(currentSlide);
+        }
+
+        setInterval(autoSlide, 5000);
+
+        function updateArrows(slider, leftBtn, rightBtn) {
+            if (slider.scrollLeft <= 0) {
+                leftBtn.classList.add("disabled");
+            } else {
+                leftBtn.classList.remove("disabled");
+            }
+
+            if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 5) {
+                rightBtn.classList.add("disabled");
+            } else {
+                rightBtn.classList.remove("disabled");
+            }
+        }
+
+        function scrollSpanish(direction) {
+            const slider = document.getElementById("spanishSlider");
+            const heroWidth = document.querySelector(".spanish_hero").offsetWidth + 28;
+
+            slider.scrollBy({
+                left: heroWidth * direction,
+                behavior: "smooth"
+            });
+
+            setTimeout(() => {
+                updateArrows(
+                    slider,
+                    document.getElementById("spanishLeft"),
+                    document.getElementById("spanishRight")
+                );
+            }, 300);
+        }
+
+        function scrollAmerican(direction) {
+            const slider = document.getElementById("americanSlider");
+            const heroWidth = document.querySelector(".american_hero").offsetWidth + 28;
+
+            slider.scrollBy({
+                left: heroWidth * direction,
+                behavior: "smooth"
+            });
+
+            setTimeout(() => {
+                updateArrows(
+                    slider,
+                    document.getElementById("americanLeft"),
+                    document.getElementById("americanRight")
+                );
+            }, 300);
+        }
+
+        function scrollJapanese(direction) {
+            const slider = document.getElementById("japaneseSlider");
+            const heroWidth = document.querySelector(".japanese_hero").offsetWidth + 28;
+
+            slider.scrollBy({
+                left: heroWidth * direction,
+                behavior: "smooth"
+            });
+
+            setTimeout(() => {
+                updateArrows(
+                    slider,
+                    document.getElementById("japaneseLeft"),
+                    document.getElementById("japaneseRight")
+                );
+            }, 300);
+        }
+
+        window.onload = function () {
+            updateArrows(
+                document.getElementById("spanishSlider"),
+                document.getElementById("spanishLeft"),
+                document.getElementById("spanishRight")
+            );
+
+            updateArrows(
+                document.getElementById("americanSlider"),
+                document.getElementById("americanLeft"),
+                document.getElementById("americanRight")
+            );
+
+            updateArrows(
+                document.getElementById("japaneseSlider"),
+                document.getElementById("japaneseLeft"),
+                document.getElementById("japaneseRight")
+            );
+        };
+    </script>
+</body>
+</html>

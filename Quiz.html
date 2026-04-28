@@ -1,0 +1,84 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link href="https://fonts.cdnfonts.com/css/another-typewriter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+
+<body>
+    <header class="banner_header">
+        <div class="search_header">
+            <div class="search_bar">
+                <form>
+                    <input type="search" class="search_input" placeholder="Search...">
+                    <button type="submit" class="search_submit">
+                        <img src="search_img.png" alt="Search Icon">
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="logo_header">
+            <h1 class="website_name">BAYAN-IKI</h1>
+            <img src="baybayin_img.png" class="baybayin_logo" alt="Baybayin Logo">
+            <img src="phflag_img.png" class="phflag_logo" alt="Philippine Flag Logo">
+        </div>
+
+        <div class="tabs_header">
+            <nav class="tabs">
+                <a href="index.html" class="tab_link">Home</a>
+                <a href="index.html#gallery" class="tab_link">Gallery</a>
+                <a href="Quiz.html" class="tab_link active">Quiz</a>
+                <a href="About_us.html" class="tab_link">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="quiz-menu">
+
+        <div class="Title">
+            <h1>History Mini Pop Quiz</h1>
+            <p>Select a historical period to begin.</p>
+        </div>
+
+        <div class="era-select">    
+            <a href="Pre-ColonialEra.html">
+                <button>Pre-Colonial Era</button>
+            </a>
+
+            <a href="SpanishEra.html">
+                <button>Spanish Era</button>
+            </a>
+
+            <a href="American.html">
+                <button>American Era</button>
+            </a>
+
+            <a href="Japanese.html">
+                <button>Japanese Era</button>
+            </a>
+        </div>
+    </div>
+
+    <div id="quiz-container" class="quiz-section">
+        <div class="app">
+            <h1 id="era-title">Quiz</h1>
+            <div class="quiz">
+                <h2 id="question"></h2>
+                <div id="answer-buttons"></div>
+                <div class="navigation-buttons">
+                    <button id="back-btn">Back</button>
+                    <button id="next-btn">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+
+</footer>
+</html>

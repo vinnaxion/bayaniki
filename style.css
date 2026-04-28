@@ -1,0 +1,636 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "True Typewriter Polyglott";
+    src: url("fonts/TruetypewriterPolyglott-mELa.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #fbf3d1;
+    background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(122, 0, 0, 0.05) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(163, 73, 62, 0.07) 0%, transparent 50%);
+    margin: 0;
+    font-family: "True Typewriter Polyglott", serif;
+}
+
+/* HEADER */
+
+.banner_header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(122, 0, 0, 0.25);
+}
+
+.search_header {
+    background: linear-gradient(135deg, #7a0000 0%, #5c0000 100%);
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.search_bar {
+    text-align: right;
+}
+
+.search_input {
+    border: 1px solid #a3493e;
+    background: white;
+    color: #3a1a10;
+    width: 420px;
+    height: 34px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.search_input::placeholder {
+    color: #aaa;
+}
+
+.search_input:focus {
+    border-color: #7a0000;
+}
+
+.search_submit {
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    height: 34px;
+    padding: 0 10px;
+    transition: background 0.2s ease;
+    vertical-align: bottom;
+}
+
+.search_submit:hover {
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.search_bar img {
+    height: 14px;
+    width: 16px;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+
+.logo_header {
+    background: linear-gradient(135deg, #7a0000 0%, #5c0000 100%);
+    position: relative;
+    padding: 10px 0 14px 0;
+}
+
+.website_name {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 8px;
+    color: #f5e6c8;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    margin-top: -52px;
+    margin-left: 100px;
+    font-size: 2rem;
+}
+
+.baybayin_logo {
+    position: absolute;
+    margin-top: -67px;
+    margin-left: 30px;
+    width: 90px;
+    height: 55px;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+    transition: transform 0.3s ease;
+}
+
+.baybayin_logo:hover {
+    transform: scale(1.05);
+}
+
+.phflag_logo {
+    position: absolute;
+    margin-top: -67px;
+    margin-left: 330px;
+    width: 90px;
+    height: 55px;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.phflag_logo:hover {
+    transform: scale(1.05);
+}
+
+.tabs_header {
+    background: linear-gradient(90deg, #8b1a10 0%, #a3493e 50%, #8b1a10 100%);
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.tab_link {
+    color: rgba(255, 235, 220, 0.88);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 48px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.25s ease, background 0.25s ease;
+}
+
+.tab_link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #f5e6c8;
+    transition: width 0.3s ease;
+}
+
+.tab_link:hover {
+    color: #f5e6c8;
+    background: rgba(255, 255, 255, 0.08);
+    text-decoration: none;
+}
+
+.tab_link:hover::after {
+    width: 60%;
+}
+
+.tabs .active {
+    color: #f5e6c8;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.tabs .active::after {
+    width: 60%;
+}
+
+/* OLD HEADER */
+
+.topbar {
+    background-color: #7a0000;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search input {
+    width: 250px;
+    height: 28px;
+}
+
+.navbar {
+    background-color: #a94442;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+/* MAIN TITLE */
+
+.main_title {
+    padding: 24px 30px 16px;
+    text-align: center;
+    font-family: 'Another Typewriter', 'Playfair Display', serif;
+    letter-spacing: 4px;
+    font-size: 1.25rem;
+    color: #7a0000;
+    position: relative;
+    font-weight: normal;
+}
+
+.main_title::before,
+.main_title::after {
+    content: '\2014';
+    font-family: serif;
+    color: #a3493e;
+    opacity: 0.5;
+    margin: 0 14px;
+}
+
+.title {
+    padding: 32px 40px 18px;
+    text-align: center;
+    font-family: 'Another Typewriter', 'Playfair Display', serif;
+    letter-spacing: 4px;
+    font-size: 1.25rem;
+    color: #7a0000;
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    content: '\2014';
+    font-family: serif;
+    color: #a3493e;
+    opacity: 0.5;
+    margin: 0 14px;
+}
+
+/* SLIDER */
+
+.slider {
+    width: 90%;
+    max-width: 1100px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    border-radius: 4px;
+    box-shadow:
+        0 10px 40px rgba(122, 0, 0, 0.25),
+        0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid rgba(163, 73, 62, 0.25);
+}
+
+.slides img {
+    height: 420px;
+}
+
+.slide {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.dots {
+    position: absolute;
+    bottom: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    height: 9px;
+    width: 9px;
+    margin: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    transform: scale(1.2);
+}
+
+.dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+/* INTRO SECTION */
+
+section {
+    max-width: 900px;
+    margin: 36px auto 60px;
+    padding: 0 32px;
+}
+
+article {
+    position: relative;
+    padding: 40px 48px;
+    background: rgba(255, 255, 255, 0.55);
+    border-left: 4px solid #a3493e;
+    border-radius: 2px;
+    box-shadow:
+        0 4px 24px rgba(122, 0, 0, 0.08),
+        0 1px 4px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(4px);
+}
+
+article::before {
+    content: '\201C';
+    font-family: 'Playfair Display', serif;
+    font-size: 7rem;
+    color: rgba(122, 0, 0, 0.08);
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+article p + p {
+    border-top: 1px solid rgba(163, 73, 62, 0.15);
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+.intro_parag {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #3a1a10;
+    text-align: justify;
+    margin: 0 0 20px 0;
+    border: none;
+    padding: 0;
+}
+
+.intro_parag:last-child {
+    margin-bottom: 0;
+}
+
+/* GALLERY WRAPPER */
+
+.outer_border {
+    max-width: 1180px;
+    margin: 0 auto 70px;
+    padding: 32px 28px 40px;
+    background: rgba(255, 255, 255, 0.55);
+    border-left: 4px solid #a3493e;
+    border-radius: 4px;
+    box-shadow:
+        0 4px 24px rgba(122, 0, 0, 0.08),
+        0 1px 4px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(4px);
+    box-sizing: border-box;
+}
+
+/* GALLERY TITLE */
+
+.bayani_title {
+    font-family: "True Typewriter Polyglott", monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: #7a0000;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+}
+
+.bayani_title p {
+    margin: 0;
+}
+
+/* DIVIDER */
+
+.small_border {
+    border: none;
+    height: 1px;
+    background: rgba(163, 73, 62, 0.25);
+    margin: 0 0 30px 0;
+}
+
+/* TIMELINES */
+
+.timelines {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #7a0000;
+    margin: 34px 0 18px;
+    letter-spacing: 1px;
+}
+
+.timelines p {
+    margin: 0;
+}
+
+/* ROWS / SLIDERS */
+
+.pre_colonial {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spanish_colonization,
+.american_colonization,
+.japanese_colonization {
+    display: flex;
+    gap: 28px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 4px 10px;
+    box-sizing: border-box;
+}
+
+.slider_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* HERO CARDS */
+
+.pre_con_hero,
+.spanish_hero,
+.american_hero,
+.japanese_hero {
+    flex: 0 0 300px;
+    width: 300px;
+    background: #7a0000;
+    border: 4px solid #7a0000;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow:
+        0 6px 18px rgba(122, 0, 0, 0.18),
+        0 2px 6px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pre_con_hero:hover,
+.spanish_hero:hover,
+.american_hero:hover,
+.japanese_hero:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 10px 24px rgba(122, 0, 0, 0.22),
+        0 4px 10px rgba(0, 0, 0, 0.14);
+}
+
+.pre_con_hero img,
+.spanish_hero img,
+.american_hero img,
+.japanese_hero img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* ARROWS */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: rgba(122, 0, 0, 0.9);
+    color: white;
+    border: none;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.arrow:hover {
+    background: #5c0000;
+}
+
+.arrow.left {
+    left: -8px;
+}
+
+.arrow.right {
+    right: -8px;
+}
+
+.arrow.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* DESCRIPTION */
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 14px 10px 16px;
+    line-height: 1.45;
+}
+
+.description p {
+    margin: 2px 0;
+}
+
+/* ABOUT US */
+
+.about_us {
+    font-size: 55px;
+    font-family: "True Typewriter Polyglott", monospace;
+    text-align: center;
+    margin-top: 5%;
+    color: #7a0000;
+}
+
+h3 {
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.member {
+    width: 150px;
+    text-align: center;
+    color: #7a0000;
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #8b0000;
+    object-fit: cover;
+}
+
+.member p {
+    margin-top: 10px;
+}
+
+.section {
+    width: 800px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.section h3 {
+    text-align: left;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.goal {
+    color: #7a0000;
+    font-family: "True Typewriter Polyglott", serif;
+    font-size: 24px;
+}
+
+ .section li {
+    color: #201f1f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.section p {
+    color: #201f1f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.creators {
+    margin-top: 5%;
+    color: #7a0000;
+    font-family: "True Typewriter Polyglott", serif;
+    font-size: 28px;
+}
+
+.member p {
+    color: #201f1f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
